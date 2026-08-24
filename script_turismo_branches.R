@@ -17,3 +17,7 @@ dados$estabelecimento = factor(dados$estabelecimento, levels = c("P", "H"), labe
 
 # Etapa 3: Análise inferencial na branch "analise-inferencial"
 # Teste de comparação de médias das variáveis quantitativas por dois grupos de variáveis qualitativas
+t.test(duracao ~ sexo, data = dados, na.rm = TRUE)
+t.test(duracao ~ estabelecimento, data = dados , na.rm = TRUE)
+t.test(valor ~ sexo, data = dados , na.rm = TRUE)
+t.test(valor ~ estabelecimento, data = dados , na.rm = TRUE)
